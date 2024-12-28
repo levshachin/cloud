@@ -41,17 +41,38 @@
   color: #888;
 }
 .card{
+  position: relative;
+  height: 200px;
   width:150px;
   border-radius: 1rem;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   /* box-sizing: border-box; */
 }
+.reverse{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  /* border-radius: 1rem; */
+}
 .card:hover{
-  border: 1px solid teal;
+  border: 2px solid teal;
   transition: 0.5s;
 }
 .main{
   display:flex;
   justify-content: center;
   flex-wrap:wrap;
+}
+.reversedCard{
+  position: relative;
+  bottom: 20px;
+  /* top: 0px; */
+  /* bottom: 30px; */
+  
+  
+}
+.reversedCard p {
+  line-height: 1; /* Расстояние между строками текста */
 }

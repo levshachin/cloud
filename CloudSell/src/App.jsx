@@ -1641,7 +1641,7 @@ function App() {
   console.log(serverList)
   return (
     <div className='main'>
-      {serverList.map((s)=> {return <CardModule key={s.id} serverName={s.name} serverPrice={parseInt(s.price)}/>})}
+      {serverList.map((s)=> {return <CardModule key={s.id} serverName={s.name} serverPrice={parseInt(s.price)} serverFeature={[s.features.cores, parseInt(s.features.core_frequency).toFixed(1) , s.features.ram, s.features.ram_type, s.features.disk, s.features.disk_type, parseInt(s.features.network_speed)]}/>})}
     </div>
   );
 }
