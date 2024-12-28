@@ -88,6 +88,9 @@ header{
   background: white;
   z-index: 100;
   border-bottom: 2px solid teal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .falseHead{
   width:100%;
@@ -101,4 +104,9 @@ header{
 .falseinput:focus{
   outline: 0px;
   border: 2px solid teal;
+}
+.icon{
+  width:7vh;
+  position: relative;
+  left:10%;
 }
