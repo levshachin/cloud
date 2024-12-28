@@ -1630,14 +1630,14 @@ function App() {
         "updated_at": "2024-12-23T11:30:17.864414"
     }
 ])
-  useEffect(()=>{
-    async function serverL() {
-      const serv = await fetch('https://api.cloudsell.ru/servers/list')
-      const s = await serv.json()
-      setServerList(s)
-    }
-    serverL()
-  }, [])
+  // useEffect(()=>{
+  //   async function serverL() {
+  //     const serv = await fetch('https://api.cloudsell.ru/servers/list')
+  //     const s = await serv.json()
+  //     setServerList(s)
+  //   }
+  //   serverL()
+  // }, [])
   console.log(serverList)
   return (
     <div className='main'>
