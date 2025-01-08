@@ -61,12 +61,12 @@
   transition: 0.5s;
 }
 .main{
-  /* height: 100%; */
-  /* width: 100%; */
+  height: 100%;
+  width: 100%;
  
-  /* display:flex;
+  display:flex;
   justify-content: center;
-  flex-wrap:wrap; */
+  flex-wrap:wrap;
 }
 .reversedCard{
   position: relative;
@@ -160,10 +160,14 @@ form input{
   position: absolute;
   top:10vh;
   left:20vw;
+  height: 90vh;
   width: 80vw;
   display: flex;
   /* flex-direction: column; */
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+}
+.error{
+  font-size: 25px;
 }
