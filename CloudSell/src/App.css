@@ -64,9 +64,9 @@
   /* height: 100%; */
   /* width: 100%; */
  
-  display:flex;
+  /* display:flex;
   justify-content: center;
-  flex-wrap:wrap;
+  flex-wrap:wrap; */
 }
 .reversedCard{
   position: relative;
@@ -81,6 +81,7 @@
 }
 header{
   position: fixed;
+  left: 0px;
   width:100%;
   border-bottom-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
@@ -98,6 +99,7 @@ header{
 }
 .falseinput{
   border: 1px solid black;
+  width: 25%;
   padding: 10px;
   border-radius: 1rem;
 }
@@ -108,5 +110,60 @@ header{
 .icon{
   width:7vh;
   position: relative;
-  left:10%;
+  left:9%;
+}
+.overlay{
+  position: fixed;
+  z-index: 10000;
+  width:100%;
+  height: 100vh;
+  background-color: rgba(173, 196, 255, 0.36);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.close{
+  cursor: pointer;
+  background-color: white;
+  border-radius: 1rem;
+  user-select: none;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+dialog{
+  border-radius: 1rem;
+}
+form input{
+  border-radius: 1rem;
+  padding: 10px;
+}
+.signin{
+  position: relative;
+  right: 10px;
+}
+.sidebar{
+  border-right: 2px solid teal;
+  border-top: 2px solid teal;
+  border-radius: 1rem;
+  position:fixed;
+  left:0px;
+  top:10vh;
+  height: 90vh;
+  width: 20vw;
+  z-index: 1000000;
+}
+.mainContent{
+  position: absolute;
+  top:10vh;
+  left:20vw;
+  width: 80vw;
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
